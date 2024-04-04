@@ -1,0 +1,90 @@
+/*CONTACT US PAGE STYLING STARTS*/
+
+
+/* Background */
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMAGES/contact-images/contact-background.webp) center/cover no-repeat fixed;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    margin-top: 15vh;
+    color: #fff;
+    /* Change text color */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Change background color */
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 10px;
+    /* Increase border radius for smoother edges */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Increase margin for better spacing */
+    padding: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Change border color */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Change input background color */
+    padding: 12px;
+    border-radius: 8px;
+    /* Increase border radius for smoother edges */
+    width: 100%;
+    margin-bottom: 15px;
+    /* Increase margin for better spacing */
+    color: #fff;
+    /* Change text color */
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #ff5722;
+    /* Change button background color */
+    color: #fff;
+    padding: 12px 24px;
+    /* Adjust padding for better button size */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* Increase margin for better spacing */
+}
+
+.contact-form button:hover {
+    background: #bacf16;
+    /* Change button background color on hover */
+    color: #021116;
+    /* Change text color on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition effect */
+}
+
+
+/* Responsive Styling */
+
+@media only screen and (max-width: 850px) {
+    .contact-form {
+        margin-top: 20vh;
+    }
+    main {
+        height: 80vh;
+    }
+}

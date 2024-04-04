@@ -1,0 +1,94 @@
+/*SMOOTH LOADING ANIMATION STARTS*/
+
+
+/* Smooth Loading Animation */
+
+main {
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Header Content Animation */
+
+.header-content h2,
+.header-content h1 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+/* Fade In Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Image Hover Animation */
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Button Hover Animation */
+
+.ctn {
+    transition: transform 0.3s ease;
+}
+
+.ctn:hover {
+    transform: scale(1.1);
+    background: #ff5722;
+    /* Change button background color */
+    color: #ffffff;
+    /* Change button text color */
+}
+
+
+/* Navigation Links Hover Animation */
+
+.nav-links li {
+    transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+    transform: scale(1.2);
+}
+
+
+/* Social Icons Hover Animation */
+
+.social-icons img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Additional Styling */
+
+
+/* You can add additional styles here to further customize the design */

@@ -1,0 +1,263 @@
+Sure, here's how you can add a dashboard section with summary information, statistics, and quick access to key features using HTML: ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/introduction-style.css" />
+    <link rel="stylesheet" href="CSS/animations.css" />
+    <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
+    <title>Wildlife Amboseli National Park | Introduction</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html"><img src="IMAGES/navfooter-images/logo.webp" class="logo" alt="logo" /></a>
+        <ul class="nav-links">
+            <li><a href="login.html" class="quick-links">Sign Up/Log In</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html" class="active">Introduction</a></li>
+            <li><a href="department.html">About KWS</a></li>
+            <li>
+                <a href="#">Animals</a>
+                <ul class="sub-menu">
+
+                    <li><a href="animalgallery.html">Animal in Amboseli National Park</a></li>
+                </ul>
+            </li>
+
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html" class="ctn">Contact Us</a></li>
+
+        </ul>
+        <img src="IMAGES/navfooter-images/menu-btn.webp" class="menu-btn" />
+    </nav>
+
+    <main>
+
+        <header id="intro-header">
+            <section class="header-content">
+                <h2>Amboseli Wildlife Delights</h2>
+                <aside class="line"></aside>
+                <h1 class="shadow">AN INTRODUCTION</h1>
+                <a href="#intro-sec1" class="ctn">Scroll</a>
+            </section>
+        </header>
+        <section class="title">
+            <h1 id="intro-sec1">WHERE TO VISIT</h1>
+            <aside class="line"></aside>
+            <p>Explore Amboseli National Park's diverse and captivating wildlife beyond the renowned lake amboseli. Venture into lesser-explored sanctuaries like Sinharaja Rainforest, home to a rich tapestry of flora and fauna. Discover the lush landscapes
+                of Udawalawe National Park, a haven for elephants and myriad bird species. Traverse the scenic Horton Plains, where elusive leopards and endemic species thrive in a stunning natural setting. Amboseli National Park's hidden wildlife gems
+                await your discovery, promising unforgettable encounters with nature's wonders.</p>
+        </section>
+        <section class="location">
+            <img src="IMAGES/introduction-images/singharaja.webp" alt="an image of the Sinharaja Rainforest">
+
+            <h4>Lake Amboseli</h4>
+            <p>A UNESCO World Heritage Site, brimming with diverse species of birds, amphibians, and rare trees, offering a glimpse into Amboseli National Park's tropical biodiversity.</p>
+        </section>
+
+        <section class="location">
+            <img src="IMAGES/introduction-images/udawalawe.webp" alt="an image of the Udawalawe National Park">
+
+            <h4>Amboseli National Park</h4>
+            <p>Renowned for its large elephant population, Amboseli National Park also hosts a variety of mammals, birds, and reptiles amidst its scenic grasslands and reservoirs.</p>
+        </section>
+
+        <section class="location">
+            <img src="IMAGES/introduction-images/knuckles.webp" alt="an image of the Knuckles Mountain Range">
+
+            <h4>Mount Kilimanjaro</h4>
+            <p>As Africa's highest peak, Mount Kilimanjaro stands majestically near Amboseli National Park, influencing its ecosystems and serving as a backdrop to the park's stunning landscapes. The mountain's snow-capped summit, visible from Amboseli,
+                enhances the scenic beauty of the region and contributes to the rich biodiversity of the area.
+            </p>
+
+            <section class="summary">
+                <h4>SUMMARY TABLE</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Notable Wildlife</th>
+                            <th>Conservation Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Amboseli National Park</td>
+                            <td>
+                                African Elephant
+                                <br><br> Maasai Giraffe
+                                <br><br> African Lion
+                            </td>
+                            <td>
+                                Vulnerable
+                                <br><br> Vulnerable
+                                <br><br> Vulnerable
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lake Amboseli</td>
+                            <td>
+                                Greater Flamingo
+                                <br><br> African Fish Eagle
+                                <br><br> Hippopotamus
+                            </td>
+                            <td>
+                                Least Concern
+                                <br><br> Near Threatened
+                                <br><br> Vulnerable
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Acacia Woodlands</td>
+                            <td>
+                                Masai Ostrich
+                                <br><br> Secretary Bird
+                                <br><br> Grant's Gazelle
+                            </td>
+                            <td>
+                                Least Concern
+                                <br><br> Least Concern
+                                <br><br> Least Concern
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Copyright © Amboseli National Park Conservation Authority (2023). All rights reserved.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+
+            <!-- Dashboard Section -->
+            <section class="dashboard">
+                <h2>Dashboard</h2>
+                <div class="summary-info">
+                    <div class="info-item">
+                        <h3>Total Sightings</h3>
+                        <p id="total-sightings">256</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Most Common Species</h3>
+                        <p id="most-common-species">Elephant</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Active Users</h3>
+                        <p id="active-users">35</p>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <h3>Statistics</h3>
+                    <!-- Chart will be added here -->
+                </div>
+                <div class="quick-access">
+                    <h3>Quick Access</h3>
+                    <ul>
+                        <li><a href="#">Record Sighting</a></li>
+                        <li><a href="#">Generate Report
+
+</a></li>
+                        <li><a href="#">View Map</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <section id="gotopbtn">
+        <a href="#"><img src="IMAGES/navfooter-images/arrowhead-up.webp" alt="go to top button" /></a>
+    </section>
+
+    <footer>
+        <section class="footer-container">
+            <section class="footer-section">
+                <h4>Contact</h4>
+                <p class="footer-para">
+                    Email: contact@slwildlife.com<br />Phone: 075-293-4625
+                </p>
+            </section>
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html" class="quick-links">Home</a>
+                <a href="introduction.html" class="quick-links">Introduction</a>
+                <a href="department.html" class="quick-links">About KWS</a>
+                <a href="animalgallery.html" class="quick-links">Animals</a>
+                <a href="events.html" class="quick-links">Events</a>
+                <a href="contact.html" class="quick-links">Contact Us</a>
+                <a href="login.html" class="quick-links">Sign Up/Log In</a>
+            </section>
+            <section class="footer-section">
+                <h4>Follow Us</h4>
+                <p class="footer-para">Stay connected on social media.</p>
+                <section class="social-icons">
+                    <a href="https://facebook.com/" target="_blank"><img src="IMAGES/navfooter-images/facebook-icon.webp" alt="Facebook" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="IMAGES/navfooter-images/twitter-icon.webp" alt="Twitter" /></a>
+                    <a href="https://instagram.com/" target="_blank"><img src="IMAGES/navfooter-images/instagram-icon.webp" alt="Instagram" /></a>
+                </section>
+            </section>
+        </section>
+        <h5 id="copyright-text">
+            © 2004-2024 All Rights Reserved. Created by
+            <a href="http://wa.me/+254798586113" target="_blank">
+                TITUS THUO.
+            </a>
+        </h5>
+
+    </footer>
+
+    <script>
+        const menubutton = document.querySelector(".menu-btn");
+        const navlinks = document.querySelector(".nav-links");
+        menubutton.addEventListener("click", () => {
+            navlinks.classList.toggle("mobile-menu");
+        });
+    </script>
+
+    <!-- Add the new functionality here -->
+    <script>
+        // Initialize variables to track user activity count and last update time
+        let userActivityCount = 0;
+        let lastUpdateTime = Date.now();
+
+        // Function to update total sightings and active users
+        function updateDashboard() {
+            // Check if 5 minutes have passed since the last update
+            if (Date.now() - lastUpdateTime >= 300000) { // 5 minutes in milliseconds
+                // Update total sightings and active users based on user activity count
+                let totalSightings = parseInt(document.getElementById('total-sightings').textContent);
+                let activeUsers = parseInt(document.getElementById('active-users').textContent);
+
+                totalSightings += userActivityCount;
+                activeUsers += userActivityCount;
+
+                // Update displayed numbers
+                document.getElementById('total-sightings').textContent = totalSightings;
+                document.getElementById('active-users').textContent = activeUsers;
+
+                // Reset user activity count and update time
+                userActivityCount = 0;
+                lastUpdateTime = Date.now();
+            }
+        }
+
+        // Increment user activity count when user activity is detected
+        document.addEventListener('mousemove', function() {
+            userActivityCount++;
+        });
+
+        // Call updateDashboard function every second (1000 milliseconds)
+        setInterval(updateDashboard, 1000);
+    </script>
+
+
+
+
+</body>
+
+</html>

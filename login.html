@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup or Login</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-color: #1b1b32;
+            color: #f5f6f7;
+            font-family: Tahoma;
+            font-size: 16px;
+        }
+        
+        h1,
+        p {
+            margin: 1em auto;
+            text-align: center;
+        }
+        
+        form {
+            width: 60vw;
+            max-width: 500px;
+            min-width: 300px;
+            margin: 0 auto;
+            padding-bottom: 2em;
+        }
+        
+        fieldset {
+            border: none;
+            padding: 2rem 0;
+            border-bottom: 3px solid #3b3b4f;
+        }
+        
+        fieldset:last-of-type {
+            border-bottom: none;
+        }
+        
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+        
+        input,
+        textarea,
+        select {
+            margin: 10px 0 0 0;
+            width: 100%;
+            min-height: 2em;
+            background-color: #0a0a23;
+            border: 1px solid #0a0a23;
+            color: #ffffff;
+        }
+        
+        .inline {
+            width: unset;
+            margin: 0 0.5em 0 0;
+            vertical-align: middle;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 60%;
+            margin: 1em auto;
+            height: 2em;
+            font-size: 1.1rem;
+            background-color: #3b3b4f;
+            border-color: white;
+            min-width: 300px;
+        }
+        
+        input[type="file"] {
+            padding: 1px 2px;
+        }
+        
+        a {
+            color: #dfdfe2;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            /* Center the list items */
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3b3b4f;
+            color: #dfdfe2;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: #4f4f63;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Signup or Login</h1>
+    <p>Please choose an option below:</p>
+    <div>
+        <button onclick="showSignupForm()">Sign Up</button>
+        <button onclick="showLoginForm()">Login</button>
+    </div>
+
+    <!-- Signup Form -->
+    <form id="signup-form" method="post" action="https://signup-demo.mwatito.com" style="display: none;">
+        <fieldset>
+            <legend>Signup Form</legend>
+            <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="username">Username: <input id="username" name="username" type="text" required /></label>
+            <label for="password">Password: <input id="password" name="password" type="password" pattern="[a-z0-9]{8,}" required /></label>
+            <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" pattern="[a-z0-9]{8,}" required /></label>
+            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            <label for="phone">Phone Number: <input id="phone" name="phone" type="tel" required /></label>
+            <input type="submit" value="Signup" />
+        </fieldset>
+    </form>
+
+    <!-- Login Form -->
+    <form id="login-form" method="post" action="https://login-demo.mwatito.com" style="display: none;">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="login-username">Username: <input id="login-username" name="login-username" type="text" required /></label>
+            <label for="login-password">Password: <input id="login-password" name="login-password" type="password" required /></label>
+            <input type="submit" value="Login" />
+        </fieldset>
+    </form>
+
+    <ul>
+        <li><a href="animalgallery.html">Animal Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="department.html">Department</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+    </ul>
+
+    <!-- JavaScript to toggle between signup and login forms -->
+    <script>
+        function showSignupForm() {
+            document.getElementById("signup-form").style.display = "block";
+            document.getElementById("login-form").style.display = "none";
+        }
+
+        function showLoginForm() {
+            document.getElementById("signup-form").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

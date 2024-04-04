@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/contact-style.css" />
+    <link rel="stylesheet" href="CSS/animations.css" />
+    <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
+    <title>Wildlife Amboseli National Park | Contact Us</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="IMAGES/navfooter-images/logo.webp" class="logo" alt="logo" /></a>
+        <ul class="nav-links">
+            <li><a href="login.html" class="quick-links">Sign Up/Log In</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="department.html">About KWS</a></li>
+            <li>
+                <a href="#">Animals</a>
+                <ul class="sub-menu">
+                    <li><a href="animalgallery.html">Animal in Amboseli National Park</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html" class="ctn">Contact Us</a></li>
+        </ul>
+        <img src="IMAGES/navfooter-images/menu-btn.webp" alt="" class="menu-btn" />
+    </nav>
+    <main>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#">
+                <label for="username">Username:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <section id="gotopbtn">
+        <a href="#"><img src="IMAGES/navfooter-images/arrowhead-up.webp" alt="go to top button" /></a>
+    </section>
+</body>
+<footer>
+    <section class="footer-container">
+        <section class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: contact@amboseliwildlife.com<br />Phone: 075-293-4625</p>
+        </section>
+        <section class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="index.html" class="quick-links">Home</a>
+            <a href="introduction.html" class="quick-links">Introduction</a>
+            <a href="department.html" class="quick-links">About KWS</a>
+            <a href="animalgallery.html" class="quick-links">Animals</a>
+            <a href="events.html" class="quick-links">Events</a>
+            <a href="contact.html" class="quick-links">Contact Us</a>
+            <a href="login.html" class="quick-links">Sign Up/Log In</a>
+        </section>
+        <section class="footer-section">
+            <h4>Follow Us</h4>
+            <p>Stay connected on social media.</p>
+            <section class="social-icons">
+                <a href="https://facebook.com/" target="_blank"><img src="IMAGES/navfooter-images/facebook-icon.webp" alt="Facebook" /></a>
+                <a href="https://twitter.com/" target="_blank"><img src="IMAGES/navfooter-images/twitter-icon.webp" alt="Twitter" /></a>
+                <a href="https://instagram.com/" target="_blank"><img src="IMAGES/navfooter-images/instagram-icon.webp" alt="Instagram" /></a>
+            </section>
+        </section>
+    </section>
+    <h5 id="copyright-text">
+        © 2004-2024 All Rights Reserved. Created by
+        <a href="http://wa.me/+254798586113" target="_blank">
+      TITUS THUO
+    </a>
+    </h5>
+    <!-- References:
+  - Amboseli National Park. "Contact Information." 2024.
+  - Kenya Wildlife Service. "Amboseli National Park Contact Details." 
+  - Youtube -->
+
+</footer>
+<script>
+    const menubutton = document.querySelector(".menu-btn");
+    const navlinks = document.querySelector(".nav-links");
+
+    menubutton.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+    });
+</script>
+
+</html>
